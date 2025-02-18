@@ -3,13 +3,15 @@ Inserta el encabezado aquí y escribe tu código abajo
 """
 
 # Declaraciones
-CONSTANTE = valor
-
+try:
 # Entradas
-entrada = input()
+    numero = float(input("Introduzca un número "))
 
 # Proceso
-
-
+    if numero % 1 == 0:
+        print("No tiene decimales")
+    else:
+        print("Sí tiene decimales")
 # Salidas
-print(salida)
+except ValueError:
+    print("Error. Introduzca un número válido.")
